@@ -1,0 +1,64 @@
+.bannerAdmin_container {
+  width: 100%;
+  padding: 5px 20px 20px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  transition: 0.3s;
+  position: relative;
+}
+
+.bannerAdmin_container p {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: #4f4f51;
+  margin-top: 20px;
+}
+
+.bannerAdmin_container img {
+  width: 100%;
+  height: auto;
+}
+
+.button_container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 20px;
+  top: 20px;
+  gap: 10px;
+}
+
+.button_container button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: none;
+  transition: 0.3s;
+}
+
+.button_container button:hover {
+  transform: scale(1.1);
+  box-shadow: none;
+}
+
+.button_container button:active {
+  transform: scale(0.97);
+}
+
+.button_container button img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (width <= 769px) {
+  .bannerAdmin_container p {
+    font-size: 1.5rem;
+  }
+}

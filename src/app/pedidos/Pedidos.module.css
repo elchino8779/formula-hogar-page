@@ -1,11 +1,18 @@
-.home_container {
-  width: 100vw;
-  animation: slideIn 0.3s ease-in-out;
-}
-
-.presentacionHD {
+.pedidos_container {
   width: 100vw;
   height: auto;
+  animation: slideIn 0.3s ease-in-out;
+  position: relative;
+}
+
+.productos_container {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 @keyframes slideIn {

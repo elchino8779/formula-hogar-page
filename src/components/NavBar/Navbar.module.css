@@ -1,0 +1,233 @@
+.navbar {
+  width: 100vw;
+  height: 80px;
+  position: sticky;
+  top: 0px;
+  background: #aa288f;
+  background: linear-gradient(45deg, #aa288f 30%, #df037f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000030;
+  z-index: 1000;
+}
+
+.menu_desplegable_container_none {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  z-index: 1000;
+  background-color: #00000050;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu_desplegable_container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  z-index: 1000;
+  background-color: #00000070;
+  transition: 0.3s;
+}
+
+.menu_desplegable_links_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid #ec82c0;
+}
+
+.search_menu_desplegable_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #363853;
+}
+
+.input_search_menu_desplegable {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  outline: 3px solid #ec82c0;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  outline-offset: 3px;
+  padding: 10px 1rem;
+  transition: 0.25s;
+}
+
+.input_search_menu_desplegable:focus {
+  outline-offset: 5px;
+  outline: 3px solid #db0081;
+}
+
+.link_menu_desplegable {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.2s;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  padding: 25px 50px;
+  background-color: #363853;
+  transition: 0.3s;
+}
+
+.link_menu_desplegable:hover {
+  background-color: #424566;
+}
+
+.link_container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.link_container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: 0.2s;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  display: flex;
+}
+
+.link_container a::before {
+  content: '';
+  position: absolute;
+  background-color: #ffffff;
+  width: 0%;
+  height: 3px;
+  bottom: -3px;
+  left: 50%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.link_container a.link_active {
+  filter: drop-shadow(0px 0px 10px #ffffff);
+  transform: translateY(-3px);
+}
+
+.link_container a.link_active::before {
+  left: 0;
+  width: 100%;
+}
+
+.link_container img {
+  transition: 0.2s;
+}
+
+.icono_carrito {
+  filter: drop-shadow(0px 0px 5px #ffffff);
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* From Uiverse.io by Cevorob */
+.burger {
+  position: relative;
+  width: 35px;
+  height: 25px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  margin-right: 5px;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  filter: drop-shadow(0px 0px 2px #ffffff);
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 25px;
+  left: 5px;
+}
+
+@media (width <= 1200px) {
+  .navbar {
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .logo_container {
+    position: absolute;
+    left: 20px;
+  }
+
+  .link_container {
+    display: none;
+  }
+}
+
+@media (width > 1200px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (width > 680px) {
+  .search_menu_desplegable_container {
+    display: none;
+  }
+}

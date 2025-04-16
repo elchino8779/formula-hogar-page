@@ -1,11 +1,9 @@
-.home_container {
-  width: 100vw;
-  animation: slideIn 0.3s ease-in-out;
-}
-
-.presentacionHD {
+.layout_container {
   width: 100vw;
   height: auto;
+  animation: slideIn 0.3s ease-in-out;
+  position: relative;
+  animation: slideIn 0.3s ease-in-out;
 }
 
 @keyframes slideIn {

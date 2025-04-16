@@ -1,0 +1,152 @@
+.card_pedidos_container {
+  width: 350px;
+  height: 550px;
+  border-radius: 1rem;
+  background: linear-gradient(45deg, #aa288f 30%, #df037f 100%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  content-visibility: auto;
+}
+
+.oferta {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.1rem;
+  animation: oferta 1.5s linear infinite;
+}
+
+@keyframes oferta {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.card_informacion {
+  width: 120%;
+  height: 93%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border-top-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card_informacion h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: #4f4f51;
+  margin-top: 20px;
+}
+
+.card_informacion p {
+  width: 70%;
+  height: 48px;
+  content-visibility: auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #4f4f51;
+  line-height: 110%;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+}
+
+.card_informacion img {
+  width: 55%;
+  height: auto;
+  background-color: #4f4f5130;
+  border-radius: 1rem;
+}
+
+.precio_cantidad {
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.precio_cantidad p {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: #4f4f51;
+  width: 50%;
+  height: 100%;
+}
+
+.cantidad_container {
+  width: 50%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cantidad_container img {
+  height: 100%;
+  background-color: #ffffff;
+  width: auto;
+  filter: opacity(0.5);
+  transition: filter 0.3s, transform 0.1s;
+  cursor: pointer;
+}
+
+.cantidad_container img:hover {
+  filter: opacity(1);
+}
+
+.cantidad_container img:active {
+  transform: scale(0.9);
+}
+
+.cantidad_productos {
+  width: 20%;
+  /* border: 3px solid #4f4f5130; */
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.card_pedidos_container button {
+  border: none;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  /* background: linear-gradient(45deg, #df037f 30%, #aa288f 100%); */
+  background-color: #df037f;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card_pedidos_container button:active {
+  opacity: 0.5;
+}
