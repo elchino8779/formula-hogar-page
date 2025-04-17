@@ -423,7 +423,7 @@ const Productos = () => {
         />
         <Image
           className={styles.cloro_liquido_productos}
-          src={'/images/Productos/Layers/Cloro_liquido_para_piscinas.png'}
+          src={'/images/Productos/Layers/Cloro_liquido_piscinas_3.png'}
           width={1200}
           height={850}
           alt="Cloro Liquido"
