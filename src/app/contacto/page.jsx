@@ -13,14 +13,14 @@ const Contacto = () => {
     <div className={styles.contacto_container}>
       <Image
         className={styles.fondo_contacto1}
-        src="/images/productos/LogosAromas/logo_original2.png"
+        src={'/images/Productos/LogosAromas/logo_original2.png'}
         alt="contacto"
         width={400}
         height={500}
       />
       <Image
         className={styles.fondo_contacto2}
-        src="/images/productos/LogosAromas/lineadeproductos2.png"
+        src={'/images/Productos/LogosAromas/lineadeproductos2.png'}
         alt="contacto"
         width={600}
         height={700}
