@@ -507,14 +507,14 @@ const Productos = () => {
       <section className={styles.alcohol_gel} id="alcohol_gel">
         <Image
           className={styles.alcohol_gel_logo}
-          src={'/images/Productos/LogosAromas/AlcoholEnGel.png'}
+          src={'/images/Productos/LogosAromas/alcohol_en_gel.png'}
           width={500}
           height={500}
           alt="Alcohol Gel"
         />
         <Image
           className={styles.alcohol_gel_productos}
-          src={'/images/Productos/Layers/alcoholengel.png'}
+          src={'/images/Productos/Layers/AlcoholEnGel.png'}
           width={850}
           height={850}
           alt="Alcohol Gel"
