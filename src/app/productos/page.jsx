@@ -423,7 +423,7 @@ const Productos = () => {
         />
         <Image
           className={styles.cloro_liquido_productos}
-          src={'/images/Productos/Layers/cloroLiquidopicinas.png'}
+          src={'/images/Productos/Layers/Cloro_liquido_para_piscinas.png'}
           width={1200}
           height={850}
           alt="Cloro Liquido"
@@ -507,14 +507,14 @@ const Productos = () => {
       <section className={styles.alcohol_gel} id="alcohol_gel">
         <Image
           className={styles.alcohol_gel_logo}
-          src={'/images/Productos/LogosAromas/alcohol_en_gel.png'}
+          src={'/images/Productos/LogosAromas/alcoholengel2.png'}
           width={500}
           height={500}
           alt="Alcohol Gel"
         />
         <Image
           className={styles.alcohol_gel_productos}
-          src={'/images/Productos/Layers/AlcoholEnGel.png'}
+          src={'/images/Productos/Layers/Alcohol_en_gel.png'}
           width={850}
           height={850}
           alt="Alcohol Gel"

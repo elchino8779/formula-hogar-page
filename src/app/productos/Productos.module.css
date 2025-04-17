@@ -1372,10 +1372,10 @@
 
 .cloro_liquido_productos {
   position: absolute;
-  left: 0;
+  left: 5%;
   bottom: 0;
   transform: translate(-5%, 10%);
-  width: 65%;
+  width: 50%;
   height: auto;
 }
 
@@ -1403,10 +1403,6 @@
 }
 
 @media (width <= 1200px) {
-  .cloro_liquido_productos {
-    width: 68%;
-    left: -1%;
-  }
   .cloro_liquido_textos {
     top: 30%;
   }
@@ -1455,7 +1451,7 @@
     top: 10%;
   }
   .cloro_liquido_productos {
-    width: 100%;
+    width: 80%;
     transform: translate(-50%, -35%);
   }
 }
